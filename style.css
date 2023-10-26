@@ -1,0 +1,28 @@
+body {
+    background-color: #5ea6e5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    padding: 20px;
+    text-align: center;
+    font-size: x-large;
+}
+#user-input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+}
+#user-msg {
+    font-size: 20px;
+    padding: 5px 7px;
+}
+#enter-button {
+    background-color: rgb(255, 213, 0);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    padding: 5px 7px;
+}
