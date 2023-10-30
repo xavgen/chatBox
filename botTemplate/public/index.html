@@ -3,17 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpenAI Chat</title>
+    <title>Spongebob Chatbot</title>
+        <link rel = "stylesheet" href = "style.css">
 </head>
 <body>
-    <form id="chatForm">
-        <label for="userInput">Type in your message:</label>
-        <input type="text" id="userInput" name="userInput">
-        <button type="submit">Submit</button>
-    </form>
+    <header>
+        <h1>Hi, I'm Spongebob!</h1>
+        <h4>Come Chat With Me!</h4>
+    </header>
 
+    <img src="Spongebob.gif" alt="Spongebob">
+
+    <div id="user-input">
+        <form id="chatForm">
+            <!-- <label for="userInput">Type in your message:</label> -->
+            <input type="text" id="user-msg" name="userInput" placeholder="Enter your message here...">
+            <button type="submit" id="enter-button">Enter</button>
+        </form>
+    </div>
     <div id="chatOutput"></div>
 
-    <!-- <script src="script.js"></script> -->
+    <script src="script.js"></script>
 </body>
 </html>
