@@ -8,6 +8,7 @@ header {
     padding: 20px;
     text-align: center;
     font-size: x-large;
+    font-family: 'SpongeBob Font Wide', sans-serif;
 }
 #user-input {
     display: flex;
@@ -16,15 +17,17 @@ header {
     justify-content: center;
     height: 10vh;
 }
-#user-msg {
+#userInput {
     font-size: 20px;
     padding: 5px 7px;
+    font-family: 'SpongeBob Font Condensed', sans-serif;
 }
 #enter-button {
     background-color: rgb(255, 213, 0);
     color: rgb(0, 0, 0);
     font-size: 20px;
     padding: 5px 7px;
+    font-family: 'SpongeBob Font Condensed', sans-serif;
 }
 img {
     display: block;
