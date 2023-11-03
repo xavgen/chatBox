@@ -11,22 +11,37 @@
         @import url('https://fonts.cdnfonts.com/css/spongebob-font-condensed');
     </style>
 </head>
+
 <body>
     <header>
         <h1>Hi, I'm Spongebob!</h1>
-        <h4>Come Chat With Me!</h4>
+        <h3>Come Chat With Me!</h3>
     </header>
 
-    <img src="Spongebob.gif" alt="Spongebob">
-
-    <div id="user-input">
-        <form id="chatForm">
-            <!-- <label for="userInput">Type in your message:</label> -->
+    
+    <form id="chatForm">
+        <div class="grid-container">
+            <div class="spongebob-container">
+                <img src="Spongebob.gif" alt="Spongebob" class="spongebob-img">
+            </div>
+            <div class="chat-container" style="overflow-y: scroll">
+                <div id="chat"></div>
+                <div id="typing-indicator" class="ticontainer">
+                    <div class="tiblock">
+                        <div class="tidot"></div>
+                        <div class="tidot"></div>
+                        <div class="tidot"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="input-container">
             <input type="text" id="userInput" name="userInput" placeholder="Enter your message here...">
             <button type="submit" id="enter-button">Enter</button>
-        </form>
-    </div>
-    <div id="chatOutput"></div>
+        </div>
+    </form>
+
+    
 
     <script src="script.js"></script>
 </body>
