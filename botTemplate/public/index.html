@@ -13,19 +13,25 @@
 </head>
 
 <body>
+    <!-- header text -->
     <header>
         <h1>Hi, I'm Spongebob!</h1>
         <h3>Come Chat With Me!</h3>
     </header>
 
-    
+    <!-- form to hold chat form -->
     <form id="chatForm">
+        <!-- grid to hold image and chatlog -->
         <div class="grid-container">
+            <!-- holds Spongebob GIF image, which is the character icon -->
             <div class="spongebob-container">
                 <img src="Spongebob.gif" alt="Spongebob" class="spongebob-img">
             </div>
+
+            <!-- holds chatlog -->
             <div class="chat-container" style="overflow-y: scroll">
                 <div id="chat"></div>
+                <!-- holds dots typing indicator where dots will bubble while waiting for bot's response messages -->
                 <div id="typing-indicator" class="ticontainer">
                     <div class="tiblock">
                         <div class="tidot"></div>
@@ -35,14 +41,15 @@
                 </div>
             </div>
         </div>
+
+        <!-- holds container for user input text box and enter button -->
         <div class="input-container">
             <input type="text" id="userInput" name="userInput" placeholder="Enter your message here...">
             <button type="submit" id="enter-button">Enter</button>
         </div>
     </form>
 
-    
-
+    <!-- call script.js file -->
     <script src="script.js"></script>
 </body>
 </html>
