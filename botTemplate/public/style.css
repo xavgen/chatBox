@@ -1,3 +1,4 @@
+/* Styles for main body display */
 body {
     background-color: #5ea6e5;
     font-family: Arial, sans-serif;
@@ -12,6 +13,8 @@ body {
     background-attachment: fixed; 
     
 }
+
+/* Styles for header text */
 header {
     padding: 10px;
     text-align: center;
@@ -26,6 +29,7 @@ header {
     margin: 0 auto;
 }
 
+/* Styles for entire chat log */
 .chat-container {
     display: flex;
     flex-direction: column;
@@ -58,6 +62,7 @@ header {
     min-width: 950px;
 }
 
+/* Styles for chatbot's texts */
 .message-input {
     display: flex;
     width: 500px;
@@ -66,6 +71,7 @@ header {
     justify-content: center;
 }
 
+/* Styles for grid containing Spongebob's image and chat log */
 .grid-container {
     display: grid;
     grid-template-columns: 0.75fr 0.75fr;
@@ -73,10 +79,10 @@ header {
     padding-left: 10%;
     padding-right: 10%;
     height: 50vh;
-  }
+}
 
-  /* Styles for user input and enter button */
-  .input-container {
+/* Styles for user input text box and enter button */
+.input-container {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -86,15 +92,7 @@ header {
     margin-right: 10%;
 }
 
-
-/* .userInput {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    height: 10vh;
-} */
-
+/* Styles for user input textbox */
 #userInput {
     flex-grow: 1;
     font-size: 20px;
@@ -102,6 +100,7 @@ header {
     font-family: 'SpongeBob Font Condensed', sans-serif;
 }
 
+/* Styles for input textbox's enter button */
 #enter-button {
     background-color: rgb(255, 213, 0);
     color: rgb(0, 0, 0);
@@ -110,6 +109,7 @@ header {
     font-family: 'SpongeBob Font Condensed', sans-serif;
 }
 
+/* Styles for typing indicator container */
 .tiblock {
     align-items: center;
     display: flex;
@@ -120,6 +120,8 @@ header {
     border-radius: 9999px;
     padding: 1rem;
 }
+
+/* Styles for each dot in typing indicator container */
 .tidot {
     border-radius: 9999px;
     height: 0.5rem;
@@ -129,6 +131,8 @@ header {
     opacity: 0;
     animation: blink 1s infinite;
 }
+
+/* Styles for each individual typing indicator dot */
 .tidot:nth-child(1) {
     animation-delay: 0.3333s;
 }
@@ -139,6 +143,7 @@ header {
     animation-delay: 0.9999s;
 }
 
+/* Animation to be applied on each typing indicator dot */
 @keyframes blink {
     50% {
         opacity: 1;
