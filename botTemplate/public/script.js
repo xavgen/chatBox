@@ -1,3 +1,4 @@
+//initializes objects
 const chat = document.getElementById('chat');
 const userMessageInput = document.getElementById('userInput');
 const sendButton = document.getElementById('enter-button');
@@ -5,15 +6,19 @@ const typingIndicator = document.getElementById('typing-indicator');
 
 typingIndicator.style.display = 'none';
 
+//first few messages of the chat bot
 appendMessage('Spongebob', 'Hi, how are ya?', 'chatbot-message')
 
+//listens for the enter button to pressed
 document.getElementById('chatForm').addEventListener('submit', async function (event) {
     event.preventDefault();
     // const userInput = document.getElementById('userInput').value;
 
     const userInput = userMessageInput.value;
     userMessageInput.value = '';
+    //add user message to the chat
     appendMessage('You', userInput, 'user-message');
+    //the loading animation waiting for spongebob to respond
     typingIndicator.style.display = 'inline-block';
 
     const response = await fetch('/api/chat', {
@@ -32,6 +37,7 @@ document.getElementById('chatForm').addEventListener('submit', async function (e
     // document.getElementById('userInput').value = '';
 });
 
+//adds messages to the chat log
 function appendMessage(sender, message, messageClass) {
     const messageDiv = document.createElement('div');
     messageDiv.classList.add('message', messageClass);
